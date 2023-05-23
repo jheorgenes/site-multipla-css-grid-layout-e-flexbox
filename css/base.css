@@ -1,0 +1,56 @@
+body, ul, li, h1, p, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-style: inherit;
+    font-size: 16px;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --cor-padrao-amarelo: #ffcc00;
+    --cor-padrao-cinza: #9d9d9c;
+}
+
+header {
+    background: black;
+    /* width: max-content; */
+}
+
+/* CSS Grid Layout */
+.container__header {
+    width: 100%;
+    height: 180px;
+    display: grid;
+    grid-template-rows: 125px 64px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header_apresentacao"
+                         "menubar";
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: black;
+}
+
+.container_telefones_contato {
+    display: flex;
+    align-items: center;
+}
+
+.imagem__telefone {
+    height: 23px;
+    width: 23px;
+}
+
+.btn_menubar {
+    display: none;
+}
+
+.menubar_expansive {
+    display: none;
+}

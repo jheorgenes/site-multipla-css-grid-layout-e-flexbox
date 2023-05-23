@@ -1,0 +1,202 @@
+
+/* Quando diminuir a tela */
+@media (max-width: 1000px) {
+
+    body {
+        display: grid;
+        grid-template-rows: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: 265px;
+        position: fixed;
+        top: 0;
+    }
+
+    .btn_menubar {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        width: 100%;
+    }
+
+    .container__header {
+        grid-row: 1 / 2;
+        height: 265px;
+    }
+
+    .header_apresentacao {
+        background: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Escondendo o menubar original de desktop */
+    .menubar {
+        display: none;
+    }
+
+    .navbar_toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border: none;
+        width: 55px;
+        height: 39px;
+        border-radius: 5px;
+    }
+
+    .navbar_toggle:hover {
+        opacity: 0.7;
+    }
+
+    .linha_toggle {
+        border: solid grey 1.5px;
+        width: 24px;
+    }
+
+    .menubar_expansive { 
+        /* display: none; */
+        flex-direction: column;
+        background: white;
+        width: 100%;
+    }
+
+    .menubar_expansive > .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menubar_expansive > .assistencia {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /** Main  **/
+    .secao_imagem_main {
+        display: grid;
+        margin-top: 265px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .secao_imagem_main {
+        display: flex;
+        margin-top: 265px;
+    }
+
+    .image__apresentacao {
+        width: 100vw;
+    }
+
+    .container__main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section__titulo_main {
+        text-align: center;
+    }
+
+    .section__conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container__formulario {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario_div {
+        min-width: 100%;
+    }
+
+    .footer_principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        flex-wrap: wrap;
+    }
+
+    .primeiro_bloco_footer {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .segundo_bloco_footer {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .terceiro_bloco_footer {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .quarto_bloco_footer {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .botoes_header {
+        min-width: 170px;
+        max-width: 250px;
+    }
+
+    .item__telefones {
+        margin: 0 10px;
+        flex-wrap: wrap;
+    }
+
+    .item_container__email, .item_container__endereco {
+        margin: 10px;
+    }
+
+    .footer_principal {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 0 20px;
+        padding-bottom: 10px;
+    }
+
+    .primeiro_bloco_footer {
+        display: flex;
+        align-items: start;
+    }
+
+    .segundo_bloco_footer, .terceiro_bloco_footer, .quarto_bloco_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.menubar {
+    grid-area: menubar;
+    width: 100%;
+}
+
+.menubar {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, auto) 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__menubar {
+    grid-column: 2 / 3;
+    display: flex;
+    max-width: 1024px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 0 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu > li {
+    white-space: nowrap;
+}
+
+.assistencia {
+    white-space: nowrap;
+}
+
+.icon_telefone_assis {
+    width: 23px;
+}

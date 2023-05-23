@@ -1,0 +1,99 @@
+.secao_imagem_main {
+    margin-top: 182px;
+}
+
+.image__apresentacao {
+    width: 100%;
+}
+
+/* Informações */
+.container__main {
+    display: grid;
+    grid-template-areas: "section__titulo_main section__titulo_main"
+                         "section__conteudo section__conteudo";  
+    grid-template-columns: 1fr 1fr;       
+    justify-content: center;        
+}
+
+.section__titulo_main {
+    grid-area: section__titulo_main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.section__conteudo {
+    grid-area: section__conteudo;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    align-items: center;
+}
+
+.container__contato {
+    grid-column: 2 / 3;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.label__contato {
+    color: var(--cor-padrao-cinza);
+} 
+
+.item_container__contato {
+    display: flex;
+    flex-direction: row;
+}
+
+.item__telefones {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 50px;
+    height: 100%;
+}
+
+.container_telefones_contato p {
+    white-space: nowrap;
+}
+
+.item_container__email {
+    display: flex;
+    gap: 5px;
+}
+
+.item_container__endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formulário */
+.container__formulario {
+    grid-column: 3 / 4;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.formulario_div {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.item__formulario input, textarea {
+    border: none;
+    background-color: #fccd00 !important;
+    color: #000 !important;
+    text-align: start;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.item__formulario input {
+  height: 50px;
+}
